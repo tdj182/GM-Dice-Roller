@@ -1,0 +1,46 @@
+.btn {
+  background: blue;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+  background: rgb(32, 32, 122);
+}
+
+.nav {
+  margin-top: 1rem;
+}
+
+.button-col,
+.roll-col,
+.history-col {
+  padding: 0.5rem 0;
+}
+
+input[type="radio"] {
+  margin: 0.4rem 0.4rem 0 0;
+}
+
+.outline {
+  border: solid red 1px;
+}
+
+button {
+  width: 75px;
+}
+
+.nav-link {
+  color: white !important;
+}
+.nav-link:hover {
+  color: coral !important;
+}
+/* 
+.history-item {
+  padding: 12px 1px !important;
+}
+
+.last-roll {
+  max-width: 50px;
+} */

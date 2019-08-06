@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://5etools.com/bestiary.html">5eTools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://perchance.org/random-magical-effect">Per Chance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="http://dnd.steinhour.net/Forgotten_Realms_campaign/Forgotten_Realms/DnD_FR_calendar_year.html
+            ">Forgotten Realms</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" target="_blank" href="http://tools.goblinist.com/5enc
+              ">Goblinist</a>
+            </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs">
+            <div class="d-flex d-row">
+              <div class="button-col">
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  1d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  2d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  3d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  4d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  5d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  6d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  7d<span class="dice-type">4</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  8d<span class="dice-type">4</span>
+                </button>
+              </div>
+
+              <div class="roll-col">
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_1d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_2d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_3d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_4d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_5d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_6d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_7d4">#</li>
+                  <li class="list-group-item last-roll" id="roll_8d4">#</li>
+                </ul>
+              </div>
+
+              <div class="history-col">
+                <ul class="list-group  history-list">
+                  <li class="list-group-item  history-item" id="history_1d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_2d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_3d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_4d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_5d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_6d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_7d4">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_8d4">
+                    History
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs">
+            <div class="d-flex d-row">
+              <div class="button-col">
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  1d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  2d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  3d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  4d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  5d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  6d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  7d<span class="dice-type">6</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  8d<span class="dice-type">6</span>
+                </button>
+              </div>
+
+              <div class="roll-col">
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_1d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_2d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_3d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_4d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_5d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_6d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_7d6">#</li>
+                  <li class="list-group-item last-roll" id="roll_8d6">#</li>
+                </ul>
+              </div>
+
+              <div class="history-col">
+                <ul class="list-group  history-list">
+                  <li class="list-group-item  history-item" id="history_1d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_2d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_3d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_4d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_5d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_6d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_7d6">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_8d6">
+                    History
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs">
+            <div class="d-flex d-row">
+              <div class="button-col">
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  1d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  2d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  3d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  4d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  5d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  6d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  7d<span class="dice-type">8</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  8d<span class="dice-type">8</span>
+                </button>
+              </div>
+
+              <div class="roll-col">
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_1d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_2d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_3d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_4d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_5d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_6d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_7d8">#</li>
+                  <li class="list-group-item last-roll" id="roll_8d8">#</li>
+                </ul>
+              </div>
+
+              <div class="history-col">
+                <ul class="list-group  history-list">
+                  <li class="list-group-item  history-item" id="history_1d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_2d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_3d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_4d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_5d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_6d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_7d8">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_8d8">
+                    History
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-xs">
+            <div class="d-flex d-row">
+              <div class="button-col">
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  1d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  2d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  3d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  4d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  5d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  6d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  7d<span class="dice-type">10</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  8d<span class="dice-type">10</span>
+                </button>
+              </div>
+
+              <div class="roll-col">
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_1d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_2d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_3d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_4d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_5d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_6d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_7d10">#</li>
+                  <li class="list-group-item last-roll" id="roll_8d10">#</li>
+                </ul>
+              </div>
+
+              <div class="history-col">
+                <ul class="list-group  history-list">
+                  <li class="list-group-item  history-item" id="history_1d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_2d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_3d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_4d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_5d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_6d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_7d10">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_8d10">
+                    History
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- D12 Area -->
+          <div class="col-xs">
+            <div class="d-flex d-row">
+              <div class="button-col">
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  1d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  2d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  3d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  4d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  5d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  6d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  7d<span class="dice-type">12</span>
+                </button>
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  8d<span class="dice-type">12</span>
+                </button>
+              </div>
+
+              <div class="roll-col">
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_1d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_2d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_3d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_4d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_5d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_6d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_7d12">#</li>
+                  <li class="list-group-item last-roll" id="roll_8d12">#</li>
+                </ul>
+              </div>
+
+              <div class="history-col">
+                <ul class="list-group  history-list">
+                  <li class="list-group-item  history-item" id="history_1d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_2d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_3d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_4d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_5d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_6d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_7d12">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_8d12">
+                    History
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs">
+            <div class="d-flex d-row">
+              <div class="button-col">
+                <button
+                  type="button"
+                  class="list-group-item btn"
+                  onclick="myFunction(this)"
+                >
+                  1d<span class="dice-type">20</span>
+                </button>
+                <button
+                type="button"
+                class="list-group-item btn"
+                onclick="myFunction(this)"
+              ><span class="dice-type">Adv.</span>
+              </button>
+                <button
+                type="button"
+                class="list-group-item btn"
+                onclick="myFunction(this)"
+              ><span class="dice-type">Dis.</span>
+              </button>
+              </div>
+
+              <div class="roll-col">
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_1d20">#</li>
+                </ul>
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_advantage">#</li>
+                </ul>
+                <ul class="list-group">
+                  <li class="list-group-item last-roll" id="roll_disadvantage">#</li>
+                </ul>
+              </div>
+
+              <div class="history-col">
+                <ul class="list-group  history-list">
+                  <li class="list-group-item  history-item" id="history_1d20">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_advantage">
+                    History
+                  </li>
+                  <li class="list-group-item  history-item" id="history_disadvantage">
+                    History
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+
+        
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
